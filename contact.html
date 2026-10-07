@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | DayFlow</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>DayFlow</h1>
+        <p>Plan your day. Track your progress.</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Tell Us About Your Day</h2>
+
+            <p>
+                Help us understand how you use DayFlow and what
+                you would like to improve in your daily routine.
+            </p>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tasks">How many tasks do you usually plan per day?</label>
+                <input type="number" id="tasks" name="tasks" min="1">
+
+                <label for="start-date">What date would you like to start tracking?</label>
+                <input type="date" id="start-date" name="start-date">
+
+                <p>What is your main goal with DayFlow?</p>
+
+                <input type="radio" id="productivity" name="goal" value="productivity">
+                <label for="productivity">Improve productivity</label>
+
+                <input type="radio" id="routine" name="goal" value="routine">
+                <label for="routine">Build better routines</label>
+
+                <input type="radio" id="progress" name="goal" value="progress">
+                <label for="progress">Track personal progress</label>
+
+                <p>Which areas would you like to improve?</p>
+
+                <input type="checkbox" id="sleep" name="areas" value="sleep">
+                <label for="sleep">Sleep</label>
+
+                <input type="checkbox" id="fitness" name="areas" value="fitness">
+                <label for="fitness">Fitness</label>
+
+                <input type="checkbox" id="study" name="areas" value="study">
+                <label for="study">Study</label>
+
+                <input type="checkbox" id="time" name="areas" value="time">
+                <label for="time">Time management</label>
+
+                <label for="frequency">How often do you currently plan your day?</label>
+
+                <select id="frequency" name="frequency">
+                    <option value="never">Never</option>
+                    <option value="sometimes">Sometimes</option>
+                    <option value="often">Often</option>
+                    <option value="daily">Every day</option>
+                </select>
+
+                <label for="message">What would you like DayFlow to help you improve?</label>
+
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit">Send</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DayFlow</p>
+    </footer>
+
+</body>
+
+</html>
